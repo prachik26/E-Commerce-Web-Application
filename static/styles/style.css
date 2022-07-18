@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    
+    min-height: 100vh;
+    width: 100%;
+    /*background-repeat: no-repeat;
+    background-attachment: fixed;*/
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    padding: 8px 12px;
+    position: relative;
+    display: inline-block;
+    list-style: none;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+.nav-links ul li::after{/*For the hover line effect before*/
+    content: '';
+    width: 0%; /*for line hovering effect in about, contact etc*/
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{/*For the hover line effect after*/
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    color: #fff;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 18px;
+    color: #fff;
+}
+
+/** For Login Page and Signup Page **/
+.form{
+    width: 500px;
+}
+.login_wrapper{
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    justify-content: center;
+}
+.btn-primary{
+    position: relative;			
+}
+.account{
+    margin-top: 20px;
+}

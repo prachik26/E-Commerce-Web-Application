@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+
+/* For All the Header sections */
+.header {
+	height: 100px;
+	width: 100%;
+	display: block;
+	background-color: rgb(252, 80, 160);
+	color: black
+}
+
+nav a svg{
+	margin-top: 10px;
+	margin-left: 50px;
+}
+
+.nav-links ul li {
+	float: right;
+	padding: 8px 12px;
+	position: relative;
+	display: block;
+	text-decoration: none;
+	color: white;
+	text-transform: capitalize;
+	
+}
+
+
+
+
+
+
+h4 {
+    float: right;
+    display: block;
+    font-size: 16px;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+	color:hsl(0, 0%, 30%);
+}
+
+.box-element{
+	box-shadow:hsl(0, 0%, 80%) 0 0 16px;
+	background-color: #fff;
+	border-radius: 4px;
+	padding: 10px;
+    width: 100%;
+}
+
+.thumbnail{
+	width: 100%;
+	height: 240px;
+	-webkit-box-shadow: -1px -3px 5px -2px rgba(214,214,214,1);
+    -moz-box-shadow: -1px -3px 5px -2px rgba(214,214,214,1);
+    box-shadow: -1px -3px 5px -2px rgba(214,214,214,1);
+}
+
+.product{
+	border-radius: 0 0 4px 4px;
+}
+
+.col-lg-3{
+	margin-top: 10px;
+    margin-left: 85px;
+    width: 100%;
+    padding: 10px;
+}
+.row{
+    width:90%;
+    margin-top: 10px;
+    margin-left: 75px;
+}
+#cart-icon{
+	width:25px;
+	display: inline-block;
+	margin-left: 15px;
+}
+
+#cart-total{
+	display: block;
+	text-align: center;
+	color:#fff;
+	background-color: red;
+	width: 20px;
+	height: 25px;
+	border-radius: 50%;
+	font-size: 14px;
+}
+
+.col-lg-6, .col-lg-8, .col-lg-12{
+	margin-top: 10px;
+}
+
+.btn{
+	border-radius: 0;
+}
+
+.row-image{
+	width: 100px;
+}
+
+.form-field{
+	width: 300px;
+	display: inline-block;
+	padding: 10px;
+}
+
+#form-button{
+    background-color: #2d7ffc;
+    border: none;
+}
+
+.cart-row{
+	display: flex;
+    align-items: flex-stretch;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ececec;
+}
+
+.quantity{
+	display: inline-block;
+	font-weight: 700;
+	padding-right:10px;
+}
+
+.chg-quantity{
+	width: 12px;
+	cursor: pointer;
+	display: block;
+	margin-top: 5px;
+	transition:.1s;
+}
+
+.chg-quantity:hover{
+	opacity: .6;
+}

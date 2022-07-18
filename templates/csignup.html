@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Register New Account</title>
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/style.css'%}">
+</head>
+
+<body>
+	<nav>
+		<div class="main">
+			{% if messages %}
+			{% for message in messages %}
+
+			<div class="alert alert-warning alert-dismissible fade show" role="alert">
+				{{ message }}
+				<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+			</div>
+			{% endfor %}
+			{% endif %}
+		</div>
+	</nav>
+	<div class="container">
+		<div class="login_wrapper">
+			<form action="" method="post" class="form">
+				<h3>Register</h3>
+				{% csrf_token %}
+				<div class="mb-3">
+					<label class="form-label">Username</label>
+					<input type="text" class="form-control" name="username" required="" placeholder="Username">
+                    <label class="form-label">Full Name</label>
+					<input type="text" class="form-control" name="fname" required="" placeholder="Full Name">
+					<label class="form-label">Email address</label>
+					<input type="email" class="form-control" name="email" required="" placeholder="example@gmail.com">
+					<label class="form-label">Password</label>
+					<input type="password" class="form-control" name="password" required="" placeholder="Abcd123@">
+				</div>
+				<button type="submit" class="btn btn-primary">Create account</button>
+				<p class="account">Already have an account? <a href="http://127.0.0.1:8000/login">Login</a></p>
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>
