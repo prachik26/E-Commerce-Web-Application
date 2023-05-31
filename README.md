@@ -1,1 +1,2 @@
 # E-Commerce-Web-Application
+This includes multi-tiered architecture, server and client side scripting techniques, implementation technologies such Django, Python, Bootstrap, HTML5, CSS, Javascript, relational database MySQL. This is a project with objective to develop a basic website where a consumer is provided with a shopping cart application and also to know about the technologies used to help such an application.
